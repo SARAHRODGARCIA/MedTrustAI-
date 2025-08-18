@@ -1,10 +1,9 @@
-# MedTrustAI
-# 🏥 Healthcare Fraud Detection Project  
+# MedTrustAI - 🏥 Healthcare Fraud Detection Project  
 
 ## 🇧🇷 Versão em Português  
 
 ### 📌 Meu Modelo Preditivo de Machine Learning  
-Um modelo de ML preditivo para **detecção de anomalias e prevenção de fraudes em planos de saúde corporativos**.  
+Modelo de ML preditivo para **detecção de anomalias e prevenção de fraudes em planos de saúde corporativos**.  
 Combina análise de dados clínicos, temporais e financeiros com interpretabilidade baseada em **SHAP** e dashboards interativos para apoiar auditoria e tomada de decisão.  
 
 ---
@@ -31,110 +30,73 @@ A base contém dados de beneficiários, prestadores, serviços, diagnósticos, p
 
 ---
 
-#### 🛠️ Como Funciona  
-1. **Criação dos Dados** – Gera aleatoriamente campos como `beneficiario_id`, `prestador_id`, `CID`, `tipo_atendimento` e `valor_pago`.  
-2. **Injeção de Fraudes** – Introduz:  
-   - Phantom Billing (data do serviço ausente)  
-   - Upcoding (procedimentos de urgência desnecessários)  
-   - Duplicidade de Cobrança (valores de pagamento anormalmente altos)  
-3. **Exportação** – Salva como `banco_dados_sintetico_operadora.csv` e permite download via Google Colab.  
+#### 🛠️ Como Funciona: EM DESENVOLVIMENTO   
 
 ⚠️ **Importante**: Para a lógica do projeto funcionar corretamente, é necessário seguir os **passos 1–12** definidos na implementação.  
 
 ---
 
-#### 📂 Estrutura de Arquivos  
-📦 healthcare-fraud-generator
-├── main.py # Código para gerar a base
-├── banco_dados_sintetico_operadora.csv # Base de dados gerada
-└── README.md # Documentação do projeto
+#### 📂 Estrutura de Arquivos  - EM DESENVOLVIMENTO
 
-yaml
-Copiar
-Editar
 
 ---
 
-#### 🚀 Como Executar  
+#### 🚀 Como Executar
 - Abra no **Google Colab** ou em qualquer ambiente Python.  
-- Instale as dependências:  
-  ```bash
-  pip install pandas numpy
-Execute o script.
-
-Baixe o CSV gerado.
-
-📊 Exemplo de Saída
-id_atendimento	beneficiario_id	prestador_id	data_solicitacao	CID	valor_pago	procedimentos_urgencia
-1	5432	456	2023-05-12	A00	512.50	nao
+- Execute o script.
 
 📜 Licença
 Este projeto está licenciado sob a MIT License – livre para uso, modificação e distribuição.
 
-🇬🇧 English Version
-📌 My Predictive Machine Learning Model
-A predictive ML model for anomaly detection and fraud prevention in corporate health plans.
-It combines clinical, temporal, and financial data analysis with SHAP-based interpretability and interactive dashboards to support auditing and decision-making.
 
-💡 Synthetic Healthcare Fraud Dataset Generator
-🔎 Overview
-This project generates a synthetic healthcare dataset designed for fraud detection experiments using Machine Learning.
-It simulates 10,000 medical claim records and injects three common fraud types:
 
-Phantom Billing – Services billed but not actually performed.
 
-Upcoding – Billing for more expensive procedures than actually provided.
 
-Duplicate Billing – Charging multiple times for the same service.
+## 🇬🇧 English Version  
 
-The dataset contains patient, provider, service, diagnosis, payment, and authorization details, making it suitable for training and testing anomaly detection models.
+### 📌 My Predictive Machine Learning Model  
+A predictive ML model for **anomaly detection and fraud prevention in corporate health plans**.  
+It combines clinical, temporal, and financial data analysis with **SHAP-based interpretability** and interactive dashboards to support auditing and decision-making.  
 
-⚙️ Features
-✅ Generates realistic, structured health claim data
-✅ Configurable fraud injection percentages
-✅ Automatically saves the dataset as CSV
-✅ Ready to use for data analysis and ML model training
+---
 
-🛠️ How It Works
-Data Creation – Randomly generates fields such as beneficiario_id, prestador_id, CID, tipo_atendimento, and valor_pago.
+### 💡 Synthetic Healthcare Fraud Dataset Generator  
 
-Fraud Injection – Introduces:
+#### 🔎 Overview  
+This project generates a **synthetic healthcare dataset** designed for fraud detection experiments using Machine Learning.  
+It simulates **10,000 medical claim records** and injects three common fraud types:  
 
-Phantom Billing (missing service date)
+- **Phantom Billing** – Services billed but not actually performed.  
+- **Upcoding** – Billing for more expensive procedures than actually provided.  
+- **Duplicate Billing** – Charging multiple times for the same service.  
 
-Upcoding (unnecessary urgent procedures)
+The dataset contains information on patients, providers, services, diagnoses, payments, and authorizations, making it suitable for training and testing anomaly detection models.  
 
-Duplicate Billing (abnormally high payment values)
+---
 
-Export – Saves as banco_dados_sintetico_operadora.csv and allows download via Google Colab.
+#### ⚙️ Features  
+✅ Generates realistic and structured medical claim data  
+✅ Allows configuration of fraud injection percentages  
+✅ Automatically saves the dataset in CSV format  
+✅ Ready to use for data analysis and ML model training  
 
-⚠️ Important: For the project logic to work correctly, it is necessary to follow steps 1–12 defined in the implementation.
+---
 
-📂 File Structure
-bash
-Copiar
-Editar
-📦 healthcare-fraud-generator  
- ├── main.py                              # Code to generate dataset  
- ├── banco_dados_sintetico_operadora.csv  # Generated dataset  
- └── README.md                            # Project documentation  
-🚀 How to Run
-Open in Google Colab or any Python environment.
+#### 🛠️ How It Works: UNDER DEVELOPMENT  
 
-Install dependencies:
+⚠️ **Important**: For the project logic to work correctly, it is necessary to follow the **steps 1–12** defined in the implementation.  
 
-bash
-Copiar
-Editar
-pip install pandas numpy
-Run the script.
+---
 
-Download the generated CSV.
+#### 📂 File Structure – UNDER DEVELOPMENT  
 
-📊 Example Output
-id_atendimento	beneficiario_id	prestador_id	data_solicitacao	CID	valor_pago	procedimentos_urgencia
-1	5432	456	2023-05-12	A00	512.50	nao
+---
 
-📜 License
-This project is licensed under the MIT License – free to use, modify, and distribute.
+#### 🚀 How to Run  
+- Open in **Google Colab** or any Python environment.  
+- Run the script.  
 
+---
+
+📜 License  
+This project is licensed under the MIT License – free to use, modify, and distribute.  
