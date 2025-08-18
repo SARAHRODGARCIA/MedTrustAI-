@@ -36,7 +36,7 @@ A base contém dados de beneficiários, prestadores, serviços, diagnósticos, p
 
 ---
 
-#### 📂 Estrutura de Arquivos  - EM DESENVOLVIMENTO
+#### 📂 Estrutura de Arquivos: EM DESENVOLVIMENTO
 
 
 ---
@@ -88,7 +88,7 @@ The dataset contains information on patients, providers, services, diagnoses, pa
 
 ---
 
-#### 📂 File Structure – UNDER DEVELOPMENT  
+#### 📂 File Structure: UNDER DEVELOPMENT  
 
 ---
 
